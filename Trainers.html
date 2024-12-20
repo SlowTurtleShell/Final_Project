@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!--
+
+	Final Project
+
+	Author: Alan Cruz Campos
+	Date: 10/31/24
+
+	Filename: Trainers.html
+
+	-->
+	
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portraits with Audio</title>
+    <link rel="stylesheet" href="Trainers_style.css"> <!-- Links to CSS! -->
+</head>
+<body>
+
+<header>
+		<div class="nav-left">
+			<a href="Index.html">
+		<img src="B&M_Home.png" alt="Home" class="nav-image" />
+	</a>
+		</div>
+		<div class="nav-right">
+	<a href="AboutUs.html">
+		<img src="B&M_AboutUs.png" alt="AboutUs" class="nav-image" />
+	</a>
+	<a href="Trainers.html">
+		<img src="B&M_Membership.png" alt="Trainers" class="nav-image" />
+	</a>
+		<img src="B&M_Events.png" alt="Events" class="nav-image" />
+	</a>
+		</div>
+	</header>
+
+<div class="portrait-container">
+    <div class="portrait" onmouseover="playAudio('audio1')" onmouseout="stopAudio('audio1')">
+        <img src="Trainer_1.png" alt="Trainer Hopeful" class="portrait-image">
+        <div class="description">Douglas Sanders</div>
+        <audio id="audio1" src="Trainer1_Hopeful.mp3"></audio>
+    </div>
+    <div class="portrait" onmouseover="playAudio('audio2')" onmouseout="stopAudio('audio2')">
+        <img src="Trainer_2.png" alt="Trainer Optimist" class="portrait-image">
+        <div class="description">Joshua Berg</div>
+        <audio id="audio2" src="Trainer2_Optimist.mp3"></audio>
+    </div>
+    <div class="portrait" onmouseover="playAudio('audio3')" onmouseout="stopAudio('audio3')">
+        <img src="Trainer_3.png" alt="Portrait 3" class="portrait-image">
+        <div class="description">Samantha Krum</div>
+        <audio id="audio3" src="Trainer3_Community.mp3"></audio>
+    </div>
+    <div class="portrait" onmouseover="playAudio('audio4')" onmouseout="stopAudio('audio4')">
+        <img src="Trainer_4.png" alt="Portrait 4" class="portrait-image">
+        <div class="description">Julia Robbson</div>
+        <audio id="audio4" src="Trainer4_Challenge.mp3"></audio>
+    </div>
+</div>
+
+<script src="Trainer_Audio.js"></script> <!-- Links to JS -->
+</body>
+
+<footer class="footer">
+		<p>Brick & Mortar Fitness Gymnasium • 265 Court St, Brooklyn, NY 11231 • 555-525-5252</p>
+	</footer>
+</html>

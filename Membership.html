@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!--
+
+	Final Project
+
+	Author: Alan Cruz Campos
+	Date: 10/31/24
+
+	Filename: Membership.html
+
+	-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans</title>
+    <link rel="stylesheet" href="Membership_style.css">
+</head>
+<body>
+
+	<header>
+		<div class="nav-left">
+			<a href="Index.html">
+		<img src="B&M_Home.png" alt="Home" class="nav-image" />
+	</a>
+		</div>
+		<div class="nav-right">
+	<a href="AboutUs.html">
+		<img src="B&M_AboutUs.png" alt="AboutUs" class="nav-image" />
+	</a>
+	<a href="Trainers.html">
+		<img src="B&M_Trainers.png" alt="Trainers" class="nav-image" />
+	</a>
+		<img src="B&M_Events.png" alt="Events" class="nav-image" />
+	</a>
+		</div>
+	</header>
+
+    <div class="form-container">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="First Last" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guest">Personal OR Guest?</label>
+                <select id="guest" required>
+                    <option value="">Select...</option>
+                    <option value="personal">Personal</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Street Address:</label>
+                <input type="text" id="address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="zip">ZIP:</label>
+                <input type="text" id="zip" required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Plans Container -->
+    <div class="plans-container" id="plansContainer" style="display: none;">
+    <h2>Plans:</h2>
+    <div class="plans">
+        <button class="plan-button" onclick="showBenefits('daily')">DAILY</button>
+        <button class="plan-button" onclick="showBenefits('monthly')">MONTHLY</button>
+        <button class="plan-button" onclick="showBenefits('yearly')">YEARLY</button>
+    </div>
+
+    <div id="benefitsContainer" class="benefits-container" style="display: none;">
+        <h3>Benefits:</h3>
+        <div id="benefitsText"></div>
+        <div id="dailyCount" style="display: none;">
+            <label for="dailyPasses">Number of Daily Passes:</label>
+            <input type="number" id="dailyPasses" min="1" max="10" placeholder="Enter number of passes">
+        </div>
+        <div id="priceDisplay" style="margin-top: 20px; font-weight: bold;"></div>
+        <button onclick="showCreditCardForm()">Continue to Payment</button>
+    </div>
+</div>
+
+    <!-- Credit Card Information -->
+    <div class="credit-card-container" id="creditCardContainer" style="display: none;">
+        <h2>Credit Card Information</h2>
+        <form id="creditCardForm">
+            <div class="form-group">
+                <label for="cardName">Name on Card:</label>
+                <input type="text" id="cardName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" required>
+            </div>
+
+            <div class="form-group">
+                <label for="expiryDate">Expiry Date (MM/YY):</label>
+                <input type="text" id="expiryDate" placeholder="MM/YY" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+            </div>
+
+            <button type="submit">Confirm Payment</button>
+        </form>
+        <div id="paymentMessage" style="color: green; margin-top: 10px;"></div>
+    </div>
+
+       <script src="CreditCard.js"></script>
+
+</body>
+
+<footer class="footer">
+		<p>Brick & Mortar Fitness Gymnasium • 265 Court St, Brooklyn, NY 11231 • 555-525-5252</p>
+	</footer>
+</html>

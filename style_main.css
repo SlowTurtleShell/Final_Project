@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+body {
+    background-image: url('BrickBackground.png'); /* Background image */
+    background-repeat: repeat; /* Repeat the image */
+    background-position: center; /* Center the image */
+}
+
+.header {
+    text-align: center;
+    background-color: #ffcc00; /* Sample header color */
+    padding: 20px;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 400px 160px 160px 160px 160px 400px; /* Define six columns */
+    grid-template-rows: repeat(4, 200px); /* Four rows of 200px */
+    gap: 0px;
+    padding: 20px;
+}
+
+.graphic {
+    background-color: #ff99cc; /* Sample graphic color */
+    height: 200px; /* Fixed height */
+    width: 400px; /* Fixed width */
+	gap: 0px;
+    text-align: center;
+}
+
+.graphic img {
+    width: 100%;        /* Make the image take the full width of the container */
+    height: 200px;     /* Set a fixed height for the image */
+    object-fit: cover; /* Crop the image to fill the container */
+    border-radius: 0x; /* Sharp corners! */
+}
+
+.logo_central {
+    background-color: #66ccff; /* Sample central container color */
+    grid-column: 2 / span 4; /* Start at column 2 and span 4 columns (columns 2 to 5) */
+    grid-row: 1 / span 2; /* Span rows 1 and 2 */
+    background-color: #f4f4f4; /* Optional: background color for visibility */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+}
+
+.menu_tabs {
+	background-color: #66ccff; /* Sample central container color */
+    grid-column: 2 / span 4; /* Start at column 2 and span 4 columns (columns 2 to 5) */
+    grid-row: 3 / span 4; /* Span rows 1 and 2 */
+	display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+	gap: 0px;
+    text-align: center;
+}
+
+.menu_tabs h3, p{
+	text-align: center; /* Center the header text */
+	margin: 0; /* Remove default margin */
+}
+
+.mission_statement {
+	background-color: #66ccff; /* Sample central container color */
+    grid-column: 2 / span 4; /* Start at column 2 and span 4 columns (columns 2 to 5) */
+    grid-row: 4 / span 4; /* Span rows 1 and 2 */
+	display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+	gap: 0px;
+    text-align: center;
+}
+
+.mission_statement h3, p{
+	text-align: center; /* Center the header text */
+	margin: 0; /* Remove default margin */
+}
+
+.hover-text {
+    color: #333; /* Initial text color */
+    font-size: 20px; /* Font size */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.hover-text:hover {
+    color: #ff0000; /* Change color on hover */
+    text-decoration: underline; /* Underline text on hover */
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: #cccccc; /* Sample footer color */
+    padding: 10px;
+}

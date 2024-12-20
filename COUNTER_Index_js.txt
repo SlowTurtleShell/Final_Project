@@ -1,0 +1,15 @@
+// Initialize the counter
+let count = 0;
+
+// Get the elements from the DOM
+const countDisplay = document.getElementById('count');
+const incrementButton = document.getElementById('incrementButton');
+
+// Function to update the counter
+function updateCounter() {
+    count += 1; // Increment the counter
+    countDisplay.textContent = count; // Update the displayed count
+}
+
+// Add event listener to the button
+incrementButton.addEventListener('click', updateCounter);

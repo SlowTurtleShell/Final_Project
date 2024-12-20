@@ -1,0 +1,80 @@
+body {
+	background-image: url('CinderBlockCement.png'); /* Background image */
+    background-repeat: repeat; /* Repeat the image */
+    background-position: left; /* Center the image */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out left and right items */
+    align-items: center; /* Center items vertically */
+    background-color: #913423; /* Dark background for header */
+    padding: 10px 20px; /* Padding around header */
+}
+
+.nav-left a,
+.nav-right a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Space between links */
+    font-size: 18px; /* Font size for links */
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.container {
+    display: flex;
+	background-color: #ffd700;
+    flex-direction: row; /* Align items in a row */
+    overflow: hidden; /* Prevent scrolling */
+    margin-top: 20px; /* Space below header */
+}
+
+.portrait {
+    width: 45%; /* Adjust width as needed */
+    margin: 10px; /* Space around portraits */
+    text-align: center; /* Center text under images */
+}
+
+.portrait img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    border-radius: 50%; /* Circular image */
+}
+
+.text-box {
+    width: 45%; /* Adjust width as needed */
+    margin: 10px; /* Space around text boxes */
+    background-color: #913423; /* Light background color */
+    padding: 15px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.centered {
+	justify-content: center;
+	background-color: #913423; /* Dark background for header */
+	text-align: center;
+}
+
+.text-box.center {
+    width: 80%; /* Adjust width as needed */
+}
+
+h3 {
+    margin-top: 0; /* Remove top margin */
+	text-align: center;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: #cccccc; /* Sample footer color */
+    padding: 10px;
+}

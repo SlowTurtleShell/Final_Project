@@ -1,0 +1,100 @@
+body {
+    background-color: #5a2d2d; /* Dark background */
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    margin: 0;
+}
+
+header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out left and right items */
+    align-items: center; /* Center items vertically */
+    background-color: #913423; /* Dark background for header */
+    padding: 10px 20px; /* Padding around header */
+}
+
+.nav-left a,
+.nav-right a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    margin: 15px; /* Space between links */
+    font-size: 18px; /* Font size for links */
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    text-decoration: underline; /* Underline on hover */
+}	
+	
+
+.form-container, .plans-container, .benefits-container, .credit-card-container {
+    margin: 15px;
+	background-color: #c2c2c2; /* Light background for form */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    width: 500px; /* Fixed width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 20px; /* Space above benefits */
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input, select {
+    width: 85%; /* Full width */
+    padding: 10px;
+    border: 1px solid #999; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #e0e0e0; /* Input background */
+}
+
+input:focus, select:focus {
+    border-color: #007BFF; /* Border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+	align-items: center;
+    width: 100%; /* Full width */
+    padding: 10px;
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+.plans-container, .credit-card-container {
+    margin-top: 20px; /* Space above sections */
+}
+
+.benefits-container {
+    margin-top: 20px; /* Space above benefits */
+}
+
+#paymentMessage {
+    text-align: center; /* Center the payment message */
+}

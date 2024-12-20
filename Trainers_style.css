@@ -1,0 +1,66 @@
+body {
+    background-color: #5a2d2d; /* Dark background */
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    margin: 0;
+}
+
+header {
+    display: flex; /* Use flexbox for layout */
+	justify-content: space-between; /* Space out left and right items */
+    align-items: center; /* Center items vertically */
+    background-color: #913423; /* Dark background for header */
+    padding: 10px 20px; /* Padding around header */
+}
+
+.nav-left a,
+.nav-right a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    margin: 15px; /* Space between links */
+    font-size: 18px; /* Font size for links */
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.portrait-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.portrait {
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.portrait:hover {
+    transform: scale(1.05);
+}
+
+.portrait-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: #cccccc; /* Sample footer color */
+    padding: 10px;
+}
